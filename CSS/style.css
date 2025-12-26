@@ -1,0 +1,127 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Chonburi&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ultra&display=swap");
+* {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  background-image: url(/img/main-background.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 90vh;
+}
+.content {
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  margin-left: 30px;
+}
+.big-topic {
+  line-height: 1.1;
+  display: flex;
+  flex-direction: column;
+}
+.the-light-topic {
+  font-weight: 300;
+  color: #ccc;
+}
+.google-btn {
+  background-color: white;
+  border: 0.5px solid #303030;
+  border-radius: 20px;
+  padding: 5px 45px 5px 45px;
+  color: black;
+  text-decoration: none;
+  transition: all 0.4s ease-in-out;
+}
+.google-btn:hover {
+  background-color: rgb(223, 223, 223);
+}
+.separator {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #ccc;
+  margin: 20px 0;
+  font-size: 14px;
+  width: 100%;
+  max-width: 380px;
+}
+.separator::before,
+.separator::after {
+  content: "";
+  flex: 1;
+  border-bottom: 1px solid #e0e0e0;
+}
+.separator:not(:empty)::after {
+  margin-left: 0.5em;
+}
+.separator:not(:empty)::before {
+  margin-right: 0.5em;
+}
+.email-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 410px;
+  margin-top: 10px;
+}
+.email-container input[type="email"] {
+  width: 100%;
+  padding: 14px 15px;
+  border: 1px solid #303030;
+  border-radius: 8px;
+  background-color: transparent;
+  outline: none;
+  font-size: 14px;
+  color: #333;
+  transition: border-color 0.3s;
+}
+.email-container label {
+  position: absolute;
+  left: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: white;
+  padding: 0 5px;
+  color: #999;
+  font-size: 14px;
+  transition: all 0.2s ease-in-out;
+  pointer-events: none;
+}
+.email-container input:focus + label,
+.email-container input:not(:placeholder-shown) + label {
+  top: 0;
+  font-size: 12px;
+  color: #5d69be;
+  font-weight: 500;
+}
+.email-container input[type="submit"] {
+  background-color: #5d69be;
+  color: white;
+  border: 1px solid #5d69be;
+  padding: 12px 25px 14px 25px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 15px;
+  height: 49px;
+  transition: background-color 0.3s;
+  margin-left: 8px;
+}
+.email-container input[type="submit"]:hover {
+  background-color: #4a54a4;
+}
+.policies, .Terms{
+  font-size: 13px;
+  font-weight: 300;
+}
+.policies{
+  color: #999;
+}
+.Terms{
+  color: black;
+}
